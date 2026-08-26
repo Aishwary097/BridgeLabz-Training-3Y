@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Creative Studio</h1>
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay">
+                <h2>Welcome to Creative Studio</h2>
+                <p>Simple ideas. Thoughtful design. Better experiences.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>We create clean and responsive web experiences with a focus on structure, usability and visual balance.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Modern creative workspace">
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <article class="service-box">
+                    <h3>Web Design</h3>
+                    <p>Clean layouts designed for clarity and usability.</p>
+                </article>
+                <article class="service-box">
+                    <h3>Responsive UI</h3>
+                    <p>Layouts that adapt smoothly to different screen sizes.</p>
+                </article>
+                <article class="service-box">
+                    <h3>Content Layout</h3>
+                    <p>Well-structured pages with readable visual hierarchy.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" required>
+
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" required>
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Creative Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

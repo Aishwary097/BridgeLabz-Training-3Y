@@ -1,0 +1,72 @@
+/* Q3: Team member cards */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #eef2ff;
+    color: #1e293b;
+}
+
+.team-page {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.team-page > header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-page h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    min-height: 17rem;
+    padding: 25px;
+    margin: 0.25rem;
+    background-color: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    box-shadow: 0 0.75rem 1.5rem #cccccc;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+.role {
+    color: #2563eb;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.card p:last-child {
+    line-height: 1.7;
+}
+
+.team-lead {
+    background-color: #dbeafe;
+    border: 3px solid #2563eb;
+}
+
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}

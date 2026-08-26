@@ -1,0 +1,152 @@
+/* Q1: Portfolio homepage */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #172033;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 4.5rem;
+    padding: 1rem 5%;
+    background-color: #172033;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.site-header h1 {
+    font-size: 1.4rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+}
+
+main {
+    flex: 1;
+    padding-top: 4.5rem;
+}
+
+.hero {
+    min-height: 70vh;
+    padding: 8vh 5%;
+    background: linear-gradient(135deg, #dbeafe, #f8fafc);
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.hero img {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.4rem solid #ffffff;
+    box-shadow: 0 0.5rem 1.5rem rgba(23, 32, 51, 0.2);
+}
+
+.intro {
+    max-width: 42rem;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+
+.content-section {
+    width: 90%;
+    max-width: 70rem;
+    margin: 3rem auto;
+    padding: 4%;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section {
+    margin-bottom: 4vh;
+}
+
+footer {
+    padding: 2vh 5%;
+    background-color: #172033;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    nav ul {
+        gap: 1em;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 12rem;
+        height: 12rem;
+    }
+}

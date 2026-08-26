@@ -1,0 +1,217 @@
+/* Q10: Complete layout demonstrating box model and positioning */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #172033;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 1rem 5%;
+    background-color: rgba(23, 32, 51, 0.96);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #7dd3fc;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.site-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    min-height: 80vh;
+    padding: 5rem 5%;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)),
+        url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=80")
+        center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 4px solid rgba(37, 99, 235, 0.35);
+    outline-offset: -1rem;
+}
+
+.hero-overlay {
+    position: absolute;
+    max-width: 50rem;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.hero-overlay h2 {
+    margin-top: 0;
+    font-size: 3.5rem;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+}
+
+.section {
+    width: 90%;
+    max-width: 75rem;
+    margin: 4rem auto;
+    padding: 30px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff, #eff6ff);
+}
+
+.about-text {
+    position: relative;
+    padding: 25px;
+}
+
+.about-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.35rem;
+    height: 100%;
+    background-color: #2563eb;
+}
+
+.about-image img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.services {
+    background-color: #ffffff;
+}
+
+.services > h2,
+.contact > h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.service-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.service-box {
+    flex: 1;
+    padding: 25px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    box-shadow: 0 0.5rem 1rem #cccccc;
+}
+
+.service-box h3 {
+    margin-top: 0;
+}
+
+.contact {
+    background-color: #e0f2fe;
+}
+
+.contact form {
+    max-width: 38rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.9rem;
+    border: 2px solid #94a3b8;
+    border-radius: 0.4rem;
+    font: inherit;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.contact button {
+    margin-top: 0.75rem;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+footer {
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    background-color: #172033;
+    color: #ffffff;
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .site-header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        flex-direction: column;
+    }
+
+    .hero-overlay h2 {
+        font-size: 2.2rem;
+    }
+
+    .section {
+        padding: 25px;
+    }
+}

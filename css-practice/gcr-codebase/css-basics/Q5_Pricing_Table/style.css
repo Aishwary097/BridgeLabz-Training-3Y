@@ -1,0 +1,102 @@
+/* Q5: Pricing table */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+.pricing-page {
+    width: 90%;
+    max-width: 75rem;
+    margin: auto;
+    padding: 5rem 0;
+}
+
+.pricing-page > header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.plans {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.plan {
+    flex: 1;
+    min-height: 28rem;
+    padding: 25px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem #cccccc;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+.plan:hover {
+    transform: scale(1.04);
+    background-color: #eff6ff;
+}
+
+.plan h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.price span {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.plan ul {
+    padding-left: 1.2rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.plan a {
+    margin-top: auto;
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.popular {
+    border: 3px solid #7c3aed;
+}
+
+.badge {
+    align-self: flex-start;
+    margin-top: 0;
+    padding: 0.35rem 0.7rem;
+    border-radius: 8px;
+    background-color: #ede9fe;
+    color: #6d28d9;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .plans {
+        flex-direction: column;
+    }
+}
