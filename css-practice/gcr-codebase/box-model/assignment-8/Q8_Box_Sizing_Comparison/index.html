@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Width You Set</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header"><a class="brand" href="#comparison">BOX<span>NOTES</span></a><span class="chapter">SIZING STUDY · 08</span></header>
+  <main id="comparison">
+    <section class="intro"><p class="eyebrow">One declaration, two outcomes</p><h1>The width<br><span>you set.</span></h1><p>Both examples declare the same width and padding. The box-sizing rule decides whether the border joins that measurement or grows beyond it.</p></section>
+    <section class="comparison" aria-label="Comparison of content-box and border-box">
+      <article class="measure-card default-card"><div class="card-meta"><span>01 / DEFAULT</span><span>CONTENT-BOX</span></div><h2>Content-box</h2><p>The width applies to content alone. Padding and border are added outside it.</p><div class="ruler"><span>Declared width: 220px</span><span>+ padding + border</span></div><div class="box-sample content-sample"><span>CONTENT</span><small>width: 220px</small></div><div class="total"><span>Actual outer width</span><strong>284px</strong></div></article>
+      <article class="measure-card border-card"><div class="card-meta"><span>02 / BORDER-BOX</span><span>INCLUDED</span></div><h2>Border-box</h2><p>The declared width includes content, padding, and border inside one boundary.</p><div class="ruler"><span>Declared width: 220px</span><span>All layers included</span></div><div class="box-sample border-sample"><span>CONTENT</span><small>width: 220px total</small></div><div class="total"><span>Actual outer width</span><strong>220px</strong></div></article>
+    </section>
+    <section class="takeaway"><span>↳</span><p>Border-box makes layouts easier to size because the width you declare is the width you get.</p></section>
+  </main>
+  <footer><span>Aishwary Agrawal</span><span>GLA University · Mathura</span></footer>
+</body>
+</html>

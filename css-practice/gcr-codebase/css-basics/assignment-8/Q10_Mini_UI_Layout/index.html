@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daymark — Mini UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header"><a class="brand" href="#home"><span class="brand-mark">D</span> daymark</a><nav aria-label="Main navigation"><a class="nav-active" href="#home">Today</a><a href="#note">Notes</a><a href="#about">About</a></nav><button class="avatar-button" type="button" aria-label="Profile: Aishwary">AA</button></header>
+    <main id="home">
+      <section class="welcome"><div><p class="eyebrow">WEDNESDAY, OCTOBER 28</p><h1>A good day to<br><span>begin again.</span></h1><p>Choose one small thing to focus on. The rest can wait.</p></div><div class="sun-art" aria-hidden="true"><span>✳</span></div></section>
+      <section class="main-card" id="note">
+        <div class="card-copy"><span class="card-label">YOUR DAILY NOTE</span><h2>What matters today?</h2><p>Write a thought, set a gentle intention, and give yourself space to come back to it.</p>
+          <form action="#note" method="get"><label for="intention">One thing I want to make time for</label><input id="intention" name="intention" type="text" placeholder="A few words are enough"><div class="button-row"><button class="save-button" type="submit">Save this note <span>↗</span></button><button class="later-button" type="button">Maybe later</button></div></form>
+        </div>
+        <figure class="note-image"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Soft sunrise over a green field"><figcaption>Take it one step at a time.</figcaption></figure>
+      </section>
+      <section class="small-prompt" id="about"><span>✦</span><p><strong>A gentle reminder:</strong> progress can be quiet and still count.</p><a href="#note">Keep that close <span>→</span></a></section>
+    </main>
+    <footer><span>Made for a little more clarity.</span><span>UI study by Aishwary Agrawal · GLA University</span></footer>
+  </div>
+</body>
+</html>

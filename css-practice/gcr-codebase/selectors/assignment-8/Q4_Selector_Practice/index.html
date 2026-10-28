@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selectors, Clearly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header"><a href="#practice" class="brand">RULE<span>BOOK</span></a><span class="chapter">CSS SELECTORS · 04</span></header>
+  <main id="practice">
+    <section class="intro"><p class="eyebrow">A practical selector study</p><h1>Find the right<br><span>element.</span></h1><p>Each example below shows how a selector can target an element, a class, an ID, an attribute, or a relationship.</p></section>
+    <section class="selector-board" aria-label="Selector examples">
+      <article class="example element-example"><span class="example-number">01</span><div><p class="rule-label">ELEMENT SELECTOR</p><h2>Type selectors</h2><p>Paragraphs share a steady line-height and readable color.</p></div><span class="code-chip">p</span></article>
+      <article class="example class-example"><span class="example-number">02</span><div><p class="rule-label">CLASS SELECTOR</p><h2>Reusable style</h2><p class="featured-note">This paragraph is selected by its class name.</p></div><span class="code-chip">.featured-note</span></article>
+      <article class="example id-example" id="highlight-card"><span class="example-number">03</span><div><p class="rule-label">ID SELECTOR</p><h2>One named target</h2><p>This panel has a unique ID to receive its own accent.</p></div><span class="code-chip">#highlight-card</span></article>
+      <article class="example attribute-example"><span class="example-number">04</span><div><p class="rule-label">ATTRIBUTE SELECTOR</p><h2>Match an attribute</h2><label for="sample-email">Email address</label><input id="sample-email" type="email" placeholder="name@example.com"><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">Read the reference <span>↗</span></a></div><span class="code-chip">[type="email"]</span></article>
+      <article class="example combinator-example"><span class="example-number">05</span><div><p class="rule-label">COMBINATORS</p><h2>Follow the structure</h2><ul><li>Child selector highlights this direct list item.</li><li>Next sibling gets a left marker.</li><li>Later siblings receive a light rule.</li></ul><div class="descendant"><span>Descendant selector</span><p>Targets text nested deeper in the card.</p></div></div><span class="code-chip">&gt; + ~ space</span></article>
+    </section>
+  </main>
+  <footer><span>Designed by Aishwary Agrawal</span><span>GLA University · Mathura</span></footer>
+</body>
+</html>

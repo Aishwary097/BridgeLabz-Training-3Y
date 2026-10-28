@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>States in Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header"><a class="logo" href="#top">STATE<span>OF CSS</span></a><span class="issue">INTERACTIVE FIELD GUIDE · 01</span></header>
+  <main id="top">
+    <section class="hero"><p class="eyebrow">A page that responds</p><h1>Every action<br>has a <span>state.</span></h1><p>Hover, focus, click, or look through the list. Each little response is a CSS pseudo-class at work.</p></section>
+    <section class="demo-row" aria-label="Pseudo-class examples">
+      <article class="demo-card"><span class="number">01 / HOVER</span><h2>Links</h2><a class="demo-link" href="#list">Move your pointer here <span>↗</span></a><p class="explanation">The hover state changes the link color and underline.</p><span class="selector">a:hover</span></article>
+      <article class="demo-card"><span class="number">02 / FOCUS</span><h2>Button</h2><button class="focus-button" type="button">Tab or click to focus</button><p class="explanation">A visible outline makes keyboard focus easy to follow.</p><span class="selector">button:focus</span></article>
+      <article class="demo-card"><span class="number">03 / ACTIVE</span><h2>Press</h2><button class="active-button" type="button">Press and hold</button><p class="explanation">The active state responds while the button is pressed.</p><span class="selector">button:active</span></article>
+      <article class="demo-card list-card" id="list"><span class="number">04 / NTH-CHILD</span><h2>List items</h2><ul><li>First note</li><li>Second note</li><li>Third note</li></ul><p class="explanation">Every second item gets a different background.</p><span class="selector">li:nth-child(even)</span></article>
+    </section>
+  </main>
+  <footer><span>Designed by Aishwary Agrawal</span><span>GLA University · Mathura</span></footer>
+</body>
+</html>
