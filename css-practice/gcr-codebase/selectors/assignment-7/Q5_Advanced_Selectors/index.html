@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selectors at Work</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><a class="logo" href="#home">SELECTOR<span>STUDY</span></a><nav aria-label="Main navigation"><a href="#examples">Examples</a><a href="#notes">Field notes</a></nav></header>
+  <main id="home">
+    <section class="hero"><p class="eyebrow">A CSS selectors workshop · 05</p><h1>Be precise<br>about <span>what you style.</span></h1><p>Attributes, relationships, and states give a stylesheet a more thoughtful vocabulary.</p><a class="hero-link" href="#examples">Explore the examples <span>↓</span></a></section>
+    <section class="selector-lab" id="examples">
+      <div class="section-heading"><div><p class="eyebrow">The practice set</p><h2>Small rules.<br>Clear intent.</h2></div><p>Hover over a row, focus the field, or follow a link to see the selectors respond.</p></div>
+      <div class="lab-grid">
+        <article class="lab-panel"><p class="panel-label">01 / ATTRIBUTES</p><h3>Match the detail</h3><ul class="item-list"><li><input type="text" value="Text fields get their own cue" aria-label="Example text input"></li><li><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">Secure links begin with HTTPS <span>↗</span></a></li><li><a href="https://www.w3.org/" target="_blank" rel="noreferrer">Standards make the web work <span>↗</span></a></li></ul></article>
+        <article class="lab-panel relationship-panel"><p class="panel-label">02 / RELATIONSHIPS</p><h3>Read the structure</h3><div class="relationship-list"><p>Direct child gets a warm highlight.</p><div class="nested"><p>Descendant text takes a softer tone.</p></div><p>Adjacent sibling has a marker.</p><p>Following sibling carries a rule.</p></div></article>
+        <article class="lab-panel"><p class="panel-label">03 / STATES</p><h3>Style the moment</h3><label class="focus-label" for="name">Your name</label><input class="focus-field" id="name" type="text" placeholder="Click to focus"><p class="focus-hint">Focus for a lime outline. Each second item in a list is highlighted.</p><div class="state-pills"><span>Hover me</span><span>Second item</span><span>Hover me</span></div></article>
+      </div>
+    </section>
+    <section class="closing" id="notes"><span>CSS is a language of relationships.</span><span>Keep the rule clear, and the page follows.</span></section>
+  </main>
+  <footer><span>Aishwary Agrawal · GLA University, Mathura</span><span>3rd Year Engineering</span></footer>
+</body>
+</html>

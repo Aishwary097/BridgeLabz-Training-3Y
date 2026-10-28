@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leave a Note</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="layout">
+    <aside class="side-panel"><a class="brand" href="#form">GOOD<span>FORM</span></a><div class="side-content"><p class="eyebrow">A small pause in the day</p><h1>Leave a<br><em>thoughtful</em><br>note.</h1><p>Focus an input to see how a clear outline helps people know where they are.</p><span class="page-number">PRACTICE 09 <i> / </i> CSS STATES</span></div><span class="side-ornament" aria-hidden="true">✳</span></aside>
+    <section class="form-panel" id="form">
+      <div class="form-heading"><span class="step">01 — YOUR NOTE</span><span class="required-note">* REQUIRED</span></div>
+      <h2>What’s on your mind?</h2>
+      <p class="form-intro">Share a quick note. The form gives every field space, and a visible focus outline when you start typing.</p>
+      <form action="#form" method="get">
+        <label for="full-name">Name <span>*</span></label><input id="full-name" name="name" type="text" placeholder="Your name" required>
+        <label for="email">Email <span>*</span></label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Your message <span>*</span></label><textarea id="message" name="message" rows="5" placeholder="Write a few lines…" required></textarea>
+        <div class="form-actions"><button type="submit">Send your note <span>↗</span></button><p>Fields have a 4px outline offset<br>so focus stays easy to see.</p></div>
+      </form>
+      <section class="outline-study" aria-label="Outline style samples"><p>OUTLINE STYLES</p><div><span class="outline-solid">Solid</span><span class="outline-dashed">Dashed</span><span class="outline-dotted">Dotted</span><span class="outline-double">Double</span></div></section>
+      <footer><span>Designed by Aishwary Agrawal</span><span>GLA University · Mathura</span></footer>
+    </section>
+  </main>
+</body>
+</html>

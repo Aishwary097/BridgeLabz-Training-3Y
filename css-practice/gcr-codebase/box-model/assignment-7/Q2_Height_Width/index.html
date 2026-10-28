@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Size in Context</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-heading"><div><p class="eyebrow">CSS sizing practice · 02</p><h1>Size is all about <span>context.</span></h1></div><p class="heading-note">Three boxes. Four units.<br>One flexible layout.</p></header>
+    <section class="size-stage" aria-label="Three boxes demonstrating CSS dimensions">
+      <article class="size-card card-pixels"><span class="index">01</span><div><p class="unit">PX · FIXED DIMENSION</p><h2>Compact</h2><p>A precise box with a capped width and a minimum height.</p><div class="measurement"><span>240px max width</span><span>170px min height</span></div></div></article>
+      <article class="size-card card-percent"><span class="index">02</span><div><p class="unit">% · PARENT RELATIVE</p><h2>Fluid</h2><p>This box expands with its available space and keeps a sensible maximum.</p><div class="measurement"><span>100% width</span><span>max-width: 24rem</span></div></div></article>
+      <article class="size-card card-viewport"><span class="index">03</span><div><p class="unit">VH + EM · VIEWPORT & TYPE</p><h2>Adaptable</h2><p>Viewport height and text-relative spacing respond to the screen.</p><div class="measurement"><span>min-height: 20vh</span><span>padding: 1.5em</span></div></div></article>
+    </section>
+    <section class="note-bar"><span class="note-symbol">↗</span><p>The stage centers every card on both axes. Resize the window to see the layout wrap naturally.</p></section>
+    <footer><span>Aishwary Agrawal</span><span>3rd Year Engineering · GLA University, Mathura</span></footer>
+  </main>
+</body>
+</html>

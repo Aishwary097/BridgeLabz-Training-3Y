@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Box, Opened Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="header"><a href="#top" class="brand">CSS FIELDGUIDE<span> / 08</span></a><span class="chapter">THE BOX MODEL</span></header>
+    <section class="intro" id="top"><p class="eyebrow">Every element has an edge</p><h1>The box,<br><span>opened up.</span></h1><p>Look past the content. Padding, border, and margin all take their own place in the layout.</p></section>
+    <section class="explorer" aria-label="Layered CSS box model illustration">
+      <div class="layer margin-layer"><span class="layer-label margin-label">04 / MARGIN <small>space outside the border</small></span>
+        <div class="layer border-layer"><span class="layer-label border-label">03 / BORDER <small>the visible edge</small></span>
+          <div class="layer padding-layer"><span class="layer-label padding-label">02 / PADDING <small>space around content</small></span>
+            <div class="content-layer"><span class="layer-label content-label">01 / CONTENT</span><p>Your text, image,<br>or interface element.</p></div>
+          </div>
+        </div>
+      </div>
+      <aside class="specimen"><p class="specimen-tag">THE SPECIMEN</p><h2>Why the layers matter</h2><p>Each layer adds space or a boundary. Together they determine how large the box feels and how it sits beside other elements.</p><dl><div><dt>CONTENT</dt><dd>160 × 92 px</dd></div><div><dt>PADDING</dt><dd>32 px</dd></div><div><dt>BORDER</dt><dd>8 px solid</dd></div><div><dt>MARGIN</dt><dd>24 px</dd></div></dl></aside>
+    </section>
+    <section class="comparison"><div><p class="eyebrow">A useful switch</p><h2>Default sizing vs.<br><span>border-box.</span></h2><p>With content-box, padding and border add to the declared size. With border-box, they fit inside it.</p></div><div class="compare-cards"><div class="compare-item content-box"><span>CONTENT-BOX</span><strong>160 px</strong><small>content width, plus layers</small></div><div class="compare-item border-box"><span>BORDER-BOX</span><strong>160 px</strong><small>total width, layers included</small></div></div></section>
+    <footer><span>Aishwary Agrawal · GLA University</span><span>3rd Year Engineering · Mathura</span></footer>
+  </main>
+</body>
+</html>
