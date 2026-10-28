@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three Principles for Flexible Pages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header"><a class="brand" href="#principles">RESPONSIVE<span>/NOTES</span></a><span class="edition">PRINCIPLES SUMMARY · 09</span></header>
+  <main id="principles">
+    <section class="intro"><p class="eyebrow">A few foundations worth remembering</p><h1>Let the page<br><span>stay flexible.</span></h1><p>Three useful principles for layouts that adapt with their content and the space around them.</p></section>
+    <section class="principle-grid" aria-label="Three responsive design principles">
+      <article class="principle-card fluid"><span class="principle-index">01 / SIZING</span><span class="symbol">↔</span><h2>Fluid layouts</h2><p>Use flexible values so columns can grow and shrink with their container instead of relying on one fixed width.</p><div class="code-sample"><span>MAIN WIDTH</span><code>width: min(100%, 72rem);</code></div><span class="card-foot">MAKE SPACE FOR CONTENT</span></article>
+      <article class="principle-card media"><span class="principle-index">02 / ASSETS</span><span class="symbol">◫</span><h2>Flexible media</h2><p>Keep images and other media inside their layout so they scale without spilling past the page.</p><div class="code-sample"><span>IMAGE RULE</span><code>max-width: 100%;</code></div><span class="card-foot">KEEP MEDIA IN FLOW</span></article>
+      <article class="principle-card breakpoints"><span class="principle-index">03 / CHANGE</span><span class="symbol">⌁</span><h2>Breakpoints</h2><p>Add a media query when the current layout no longer gives the content enough room.</p><div class="code-sample"><span>SMALL SCREENS</span><code>@media (max-width: 600px)</code></div><span class="card-foot">RESPOND WHEN IT HELPS</span></article>
+    </section>
+  </main>
+  <footer><span>A responsive design summary by Aishwary Agrawal</span><span>GLA University · Mathura</span></footer>
+</body>
+</html>

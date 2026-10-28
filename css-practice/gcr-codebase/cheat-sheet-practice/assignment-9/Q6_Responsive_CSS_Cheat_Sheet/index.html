@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Responsive Field Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header"><a class="brand" href="#guide">FIELD<span>GUIDE</span></a><span class="edition">RESPONSIVE CSS · 06</span></header>
+  <main id="guide">
+    <section class="intro"><p class="eyebrow">A compact reference for flexible pages</p><h1>Built to meet<br><span>the screen.</span></h1><p>Four practical ideas for layouts that move gracefully from a wide desktop to a small phone.</p></section>
+    <section class="guide-grid" aria-label="Responsive CSS concepts">
+      <article class="guide-card filters"><span class="card-number">01</span><p class="category">IMAGE TREATMENT</p><h2>Filters</h2><p class="definition">Adjust the color, contrast, or focus of an image without replacing the source.</p><code>filter: grayscale(1);</code><span class="card-icon">◐</span></article>
+      <article class="guide-card media"><span class="card-number">02</span><p class="category">SCREEN RULES</p><h2>Media queries</h2><p class="definition">Apply a different set of styles when the viewport reaches a chosen width.</p><code>@media (max-width: 700px)</code><span class="card-icon">↔</span></article>
+      <article class="guide-card layout"><span class="card-number">03</span><p class="category">FLEXIBLE STRUCTURE</p><h2>Responsive design</h2><p class="definition">Let content adapt to the space available with flexible widths and useful breakpoints.</p><code>width: min(100%, 70rem);</code><span class="card-icon">▦</span></article>
+      <article class="guide-card type"><span class="card-number">04</span><p class="category">FLUID READING</p><h2>Typography</h2><p class="definition">Scale text between comfortable minimum and maximum sizes as the screen changes.</p><code>font-size: clamp(1rem, 2vw, 1.5rem);</code><span class="card-icon">Aa</span></article>
+    </section>
+  </main>
+  <footer><span>Notes by Aishwary Agrawal</span><span>GLA University · Mathura</span></footer>
+</body>
+</html>
