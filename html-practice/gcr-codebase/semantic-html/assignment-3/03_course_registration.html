@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Registration</title>
+</head>
+<body>
+    <header><h1>Course Registration</h1><p>Choose a course and provide your student details.</p></header>
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Student details</legend>
+                <p><label for="student-name">Full name</label><br><input id="student-name" name="name" type="text" autocomplete="name" required></p>
+                <p><label for="student-email">Email address</label><br><input id="student-email" name="email" type="email" autocomplete="email" required></p>
+                <p><label for="course">Select a course</label><br>
+                    <select id="course" name="course" required>
+                        <option value="" selected disabled>Choose a course</option>
+                        <option value="html">HTML Fundamentals</option>
+                        <option value="java">Java Programming</option>
+                        <option value="database">Database Fundamentals</option>
+                    </select>
+                </p>
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+        <section>
+            <h2>Available course schedules</h2>
+            <table>
+                <caption>Weekly class schedule</caption>
+                <thead><tr><th scope="col">Course</th><th scope="col">Day</th><th scope="col">Time</th><th scope="col">Instructor</th></tr></thead>
+                <tbody>
+                    <tr><td>HTML Fundamentals</td><td>Monday</td><td>10:00–11:30</td><td>Web Development Faculty</td></tr>
+                    <tr><td>Java Programming</td><td>Wednesday</td><td>12:00–13:30</td><td>Programming Faculty</td></tr>
+                    <tr><td>Database Fundamentals</td><td>Friday</td><td>14:00–15:30</td><td>Database Faculty</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
