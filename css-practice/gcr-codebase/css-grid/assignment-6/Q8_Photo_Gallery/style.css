@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #27342d;
+    background: #f4f6f2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.gallery-heading {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 1.5rem;
+}
+
+.eyebrow {
+    margin: 0 0 0.5rem;
+    color: #55715b;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.gallery-heading h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    letter-spacing: -0.04em;
+}
+
+.gallery-heading > p:last-child {
+    color: #68736a;
+}
+
+.photo-grid {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+}
+
+.photo-grid figure {
+    position: relative;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 0.9rem;
+    background: #e3e9e1;
+}
+
+.photo-grid img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.photo-grid figure:hover img {
+    transform: scale(1.06);
+}
+
+.photo-grid figcaption {
+    padding: 0.8rem 1rem;
+    color: #405247;
+    background: #fff;
+    font-weight: 650;
+}
+
+@media (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-grid img {
+        height: 240px;
+    }
+}

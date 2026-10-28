@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem;
+    color: #27324a;
+    background: #f2f5fb;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-align: center;
+}
+
+.page-content {
+    width: min(100%, 520px);
+}
+
+.eyebrow,
+.card-label {
+    color: #5e7198;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.page-content > h1 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.7rem);
+    line-height: 1.1;
+}
+
+.flip-card {
+    width: min(100%, 360px);
+    height: 450px;
+    margin: 0 auto;
+    perspective: 1000px;
+    outline-offset: 0.35rem;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+}
+
+.flip-card:hover .card-inner,
+.flip-card:focus .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 1.25rem;
+    background: #fff;
+    box-shadow: 0 1.5rem 3rem #2636531f;
+    backface-visibility: hidden;
+    text-align: left;
+}
+
+.card-front img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-front > div {
+    position: relative;
+    padding: 1.5rem;
+    color: #fff;
+    background: linear-gradient(transparent, #13253ddd);
+}
+
+.card-front .card-label {
+    color: #e1eaff;
+}
+
+.card-front h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.card-back {
+    justify-content: center;
+    padding: 2rem;
+    color: #fff;
+    background: #334f7e;
+    transform: rotateY(180deg);
+}
+
+.card-back .card-label {
+    color: #dce8ff;
+}
+
+.card-back h2 {
+    font-size: 2rem;
+    line-height: 1.15;
+}
+
+.card-back > p:last-child {
+    color: #e4ebf7;
+}
+
+.hint {
+    color: #65718a;
+    font-size: 0.9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-inner {
+        transition-duration: 0.01ms;
+    }
+}
