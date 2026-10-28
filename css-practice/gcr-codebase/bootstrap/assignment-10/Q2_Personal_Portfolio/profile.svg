@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Aishwary Agrawal monogram</title>
+  <desc id="desc">Abstract green profile illustration with the initials AA</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dff0b8"/>
+      <stop offset="1" stop-color="#7fa77c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="200" fill="url(#background)"/>
+  <circle cx="200" cy="155" r="84" fill="#315b41" opacity=".12"/>
+  <path d="M79 354c10-85 55-128 121-128s111 43 121 128" fill="#315b41"/>
+  <circle cx="200" cy="151" r="62" fill="#f4f6e9"/>
+  <text x="200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#315b41">AA</text>
+</svg>
