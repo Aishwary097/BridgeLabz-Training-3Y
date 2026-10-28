@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Form Demonstration</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>This is a classroom demonstration only. Do not enter real payment details; this page does not process payments.</p>
+    <form action="#" method="post" autocomplete="off">
+        <p><label for="cardholder">Cardholder Name</label><br><input id="cardholder" name="cardholder" type="text" autocomplete="cc-name" required></p>
+        <p><label for="card-number">Card Number</label><br><input id="card-number" name="card-number" type="text" inputmode="numeric" autocomplete="cc-number" required></p>
+        <p><label for="expiry">Expiry Date</label><br><input id="expiry" name="expiry" type="month" autocomplete="cc-exp" required></p>
+        <p><label for="cvv">CVV</label><br><input id="cvv" name="cvv" type="password" inputmode="numeric" autocomplete="cc-csc" required></p>
+        <button type="submit">Pay Now</button>
+    </form>
+</body>
+</html>

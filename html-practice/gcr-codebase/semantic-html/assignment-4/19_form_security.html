@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Security Attributes</title>
+</head>
+<body>
+    <h1>Form with Autofill Disabled</h1>
+    <form action="#" method="post" autocomplete="off">
+        <p><label for="security-name">Name</label><br><input id="security-name" name="name" type="text" required></p>
+        <p><label for="security-email">Email</label><br><input id="security-email" name="email" type="email" required></p>
+        <p><label for="security-password">Password</label><br><input id="security-password" name="password" type="password" required></p>
+        <button type="submit">Submit</button>
+    </form>
+    <p>On a shared device, turning off autocomplete can reduce the chance that personal values are saved or suggested to the next user. It is only one precaution and does not replace secure handling by the website.</p>
+</body>
+</html>

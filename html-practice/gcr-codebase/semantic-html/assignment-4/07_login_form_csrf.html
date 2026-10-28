@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form and CSRF Token</title>
+</head>
+<body>
+    <h1>Log In</h1>
+    <form action="#" method="post">
+        <input type="hidden" name="csrf_token" value="demo-token-replace-on-server">
+        <p><label for="username">Username</label><br><input id="username" name="username" type="text" autocomplete="username" required></p>
+        <p><label for="login-password">Password</label><br><input id="login-password" name="password" type="password" autocomplete="current-password" required></p>
+        <button type="submit">Log In</button>
+    </form>
+    <p>A hidden CSRF token is submitted with the form. A real server must generate a unique, unpredictable token for the user's session and verify it before accepting the request; a fixed demo value alone does not protect a form.</p>
+</body>
+</html>

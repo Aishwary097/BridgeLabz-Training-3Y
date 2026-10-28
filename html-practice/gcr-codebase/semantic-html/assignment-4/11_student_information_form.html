@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Information</title>
+</head>
+<body>
+    <h1>Student Information Form</h1>
+    <form action="#" method="get">
+        <p><label for="student-name">Name</label><br><input id="student-name" name="name" type="text" required></p>
+        <p><label for="roll-number">Roll Number</label><br><input id="roll-number" name="roll-number" type="text" required></p>
+        <p><label for="course">Course</label><br>
+            <select id="course" name="course" required>
+                <option value="" selected disabled>Select Course</option>
+                <option value="engineering">Engineering</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="business">Business Administration</option>
+            </select>
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
